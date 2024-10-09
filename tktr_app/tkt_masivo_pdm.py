@@ -6,6 +6,11 @@ from os import path
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import openpyxl
+import warnings
+
+# Silencia el UserWarning específico de openpyxl
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
+
 
 
 #Directorio de entrada:

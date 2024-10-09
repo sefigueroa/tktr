@@ -1,5 +1,5 @@
-tkt_masivo_pdm_filesystem/input/*
-tkt_masivo_pdm_filesystem/output/*
-tkt_masivo_correctivos_filesystem/input/*
-tkt_masivo_correctivos_filesystem/output/*
-/venv
+filesystem/*/input/*
+filesystem/*/output/*
+filesystem/*/scrap/*
+
+.venv
