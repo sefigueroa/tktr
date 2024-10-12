@@ -79,7 +79,6 @@ def main():
             # Procesar PDM:
             tkt_masivo_pdm.proc_tktsPdm(configDic)
             #Mover al scrap lo procesado:
-            quit()
             inputsList = [configDic['pdm_pdm_file_path'], configDic['pdm_inputSucceededFilePath']]
             misc.move2scrap(configDic['pdm_scrapDirPath'], inputsList)
             print("-"*40)
