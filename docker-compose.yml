@@ -1,0 +1,27 @@
+services:
+  pdmtktr:
+    build: .
+    container_name: pdmtktr_ct
+    environment:
+      - ENVIRONMENT=prod
+      #- FILESYSTEMPATH="c:\docker\volumenes\filesystem:/app/filesystem"
+    volumes:
+      - c:\docker\volumenes\filesystem:/app/filesystem
+
+  filebrowser:
+      image: filebrowser/filebrowser:latest
+      container_name: pdmtktr_filebrowser_ct
+      environment:
+        - PUID=1000
+        - PGID=1000
+        #- FILEBROWSER_PASSWORD=${FILEBROWSER_PASSWORD}
+      volumes:
+        #- shared_storage:/srv
+        - c:/docker/volumenes/filesystem/pdmtktr:/srv
+        #- ./filebrowser.json:./filebrowser.json
+      ports:
+      - "8080:80"
+volumes:
+  postgres_data:
+  shared_storage:
+    driver: local

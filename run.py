@@ -57,7 +57,7 @@ def main():
         print("-" * 50)
         # Verificar si los archivos existen antes de continuar
         if not os.path.exists(configDic['pdmc_correctivos_file_path']):
-            print("Sin CORRECTIVOS para procesar...")
+            print("Sin CORRECTIVOS para procesar...en "+configDic['pdmc_correctivos_file_path'])
         elif os.path.exists(configDic['pdmc_correctivos_file_path']):
             print("----PROCESANDO CORRECTIVOS----")
             # Limpiar el output:
@@ -70,7 +70,7 @@ def main():
             misc.move2scrap(configDic['pdmc_scrapDirPath'], inputsList)
             print("-"*40)
         if not os.path.exists(configDic['pdm_pdm_file_path']):
-            print("Sin Planificacion PDM para procesar...")
+            print("Sin Planificacion PDM para procesar en "+configDic['pdm_pdm_file_path'])
         elif os.path.exists(configDic['pdm_pdm_file_path']):
             print("----PROCESANDO PLANIFICACION DE PDM----")
             # Limpiar el output:
