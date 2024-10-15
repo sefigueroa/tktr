@@ -22,8 +22,8 @@ mkdir -p /app/filesystem/pdmtktr/pdm/scrap
 rm -Rf app/filesystem/pdmtktr/correctivos/output/*
 rm -Rf app/filesystem/pdmtktr/pdm/output/*
 
-# Llamar al script de inicialización
-./init_pdmtktr.sh
+# Llamar al script de inicialización (esta en el / porque lo copia el Dockerfile)
+/init_pdmtktr.sh
 
 # Ejecutar el comando original
 exec "$@"
