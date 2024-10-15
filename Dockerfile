@@ -16,6 +16,9 @@ COPY . .
 # Copia el script de inicio
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+#y copiar el inicializador
+COPY init_pdmtktr.sh /init_pdmtktr.sh
+RUN chmod +x /init_pdmtktr.sh
 
 # Ejecuta el script de inicio cuando se inicie el contenedor
 ENTRYPOINT ["/entrypoint.sh"]

@@ -41,7 +41,6 @@ def proc_correctivos(configDic):
     # Input Configuraciones (por ej periodo):
     inputConfigFile = path.join(configDic['filesystemPath'], configDic['pdmc_inputConfigFile'])
     print(inputConfigFile)
-    quit()
     # Input correctivos:
     inputCorrectivosFile = configDic['pdmc_inputCorrectivosFile']
 

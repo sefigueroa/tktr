@@ -22,7 +22,8 @@ mkdir -p /app/filesystem/pdmtktr/pdm/scrap
 rm -Rf app/filesystem/pdmtktr/correctivos/output/*
 rm -Rf app/filesystem/pdmtktr/pdm/output/*
 
-
+# Llamar al script de inicialización
+/app/init_pdmtktr.sh
 
 # Ejecutar el comando original
 exec "$@"
