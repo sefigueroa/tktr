@@ -121,7 +121,7 @@ def proc_tktsPdm(configDic):
         contextVersion = config.get('CONFIG', 'contextVersion')
 
         #valido que el año no sea mayor a 2024 ni anterior a 2023: (por que no lo dejaba ser mas alla del 2025???)
-        if 2023 <= int(contextYear) < 2025:
+        if 2023 <= int(contextYear) < 2027:
             # Verifica si contextMonth está dentro del rango deseado
             if 1 <= int(contextMonth) <= 12:
                 True
