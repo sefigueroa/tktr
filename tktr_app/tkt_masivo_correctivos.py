@@ -240,6 +240,9 @@ def proc_correctivos(configDic):
 
     dfModel = dfReduced
 
+    #Agregar la columna hardcodeada imputacion:
+    dfModel["imputacion"] = "No Aplica"
+
     #Si el dataframe quedo vacio, no guardo datos y detengo ejecucion
     if dfModel.empty:
         print("***Revisar configuracion y contexto: Al finalizar, no hay datos para generar tickets")

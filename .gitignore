@@ -1,6 +1,8 @@
 filesystem/pdmtktr/correctivos/*
 filesystem/pdmtktr/pdm/*
-
+filesystem/pdmtktr/correctivos/scrap/*
+filesystem/pdmtktr/correctivos/output/*
+filesystem/pdmtktr/correctivos/input/*
 .venv
 
 # Byte-compiled / optimized / DLL files
