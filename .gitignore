@@ -1,5 +1,7 @@
 filesystem/pdmtktr/correctivos/*
-filesystem/pdmtktr/pdm/*
+filesystem/pdmtktr/pdm/scrap/*
+filesystem/pdmtktr/pdm/output/*
+filesystem/pdmtktr/pdm/input/*
 filesystem/pdmtktr/correctivos/scrap/*
 filesystem/pdmtktr/correctivos/output/*
 filesystem/pdmtktr/correctivos/input/*
